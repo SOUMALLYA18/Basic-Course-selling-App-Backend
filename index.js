@@ -6,7 +6,7 @@ const userRouter = require("./routes/user");
 const PORT = 3000;
 
 app.use(bodyParser.json());
-app.use("admin", adminRouter);
+app.use("/admin", adminRouter);
 app.use("/user", userRouter);
 
 app.listen(PORT, () => {
